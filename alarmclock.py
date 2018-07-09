@@ -6,36 +6,32 @@ import webbrowser
 import random, os
 
 
-file_path = ""
-if os.path.isfile(file_path) == False:
+def alarm_clock(file_path):
+	if os.path.isfile(file_path) == False:
         print "ERROR: file not present"
 
 
-print "What time do you want to wake up?"
+		print "What time do you want to wake up?"
 
-print "Use this form.\nExample: 06:30"
+		print "Use this form.\nExample: 06:30"
 
-Alarm = input()
-
-
-Time = time.strftime("%H:%M")
-
-with open("YT.txt") as f:
-    content = f.readlines()
+		Alarm = input()
 
 
-while Time != Alarm:
+		Time = time.strftime("%H:%M")
 
-    print "The time is" + Time
-
-    Time = time.strftime("%H:%M")
-    time.sleep(6)
+	with open("YT.txt") as f:
+    	content = f.readlines()
 
 
-if Time == Alarm:
+	while Time != Alarm:
 
-    print "Time to Wake up"
+    	print "The time is" + Time
 
-    #random_video = random.choice(content)
-#webbrowser.open("https://www.youtube.com/watch?v=hT_nvWreIhg")
+    	Time = time.strftime("%H:%M")
+    	time.sleep(6)
 
+
+	if Time == Alarm:
+
+    	print "Time to Wake up"
