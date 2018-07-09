@@ -8,7 +8,7 @@ import random, os
 
 def alarm_clock(file_path):
 	if os.path.isfile(file_path) == False:
-        print "ERROR: file not present"
+        	print "ERROR: file not present"
 
 
 		print "What time do you want to wake up?"
@@ -21,17 +21,17 @@ def alarm_clock(file_path):
 		Time = time.strftime("%H:%M")
 
 	with open("YT.txt") as f:
-    	content = f.readlines()
+    		content = f.readlines()
 
 
 	while Time != Alarm:
 
-    	print "The time is" + Time
+    		print "The time is" + Time
 
     	Time = time.strftime("%H:%M")
-    	time.sleep(6)
+    		time.sleep(6)
 
 
 	if Time == Alarm:
 
-    	print "Time to Wake up"
+    		print "Time to Wake up"
