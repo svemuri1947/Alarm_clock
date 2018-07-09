@@ -20,7 +20,7 @@ def alarm_clock(file_path):
 
 		Time = time.strftime("%H:%M")
 
-	with open("YT.txt") as f:
+	with open(filepath) as f:
     		content = f.readlines()
 
 
