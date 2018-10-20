@@ -5,7 +5,7 @@ import time
 import webbrowser
 import random, os
 
-
+#Add the file path
 def alarm_clock(file_path):
 	if os.path.isfile(file_path) == False:
         	print "ERROR: file not present"
