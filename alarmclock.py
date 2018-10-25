@@ -1,5 +1,6 @@
 #!/bin/python
 
+#import libraries
 
 import time
 import webbrowser
